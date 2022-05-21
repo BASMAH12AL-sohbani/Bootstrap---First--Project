@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    
+    background-color: #777 !important;
+    font-family: 'Comic Neue' ,cursive;
+    text-transform: capitalize;
+}
+
+code{
+    font-size: 20px !important;
+}
+.nav1{
+    border-right: 1px solid#ccc;
+    padding-right: 10px;
+    font-weight: bold;
+}
+hr{
+    text-shadow: 1px 1px #333;
+    
+}
+#navbar-header{
+    background-color: #6c757d !important;
+    opacity: .7;
+}
+.navbar-logo{
+   width: 40px;
+   height: 40px;
+   margin-right: 15px;
+   border-radius: 50%;
+
+   
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px #fff,
+                -10px -10px 20px #fff;
+
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner h1{
+    text-shadow: 1px 1px #000;
+}
+
+.dropdown-menu a{
+    text-shadow: 1px 1px 1px gray;
+   
+}
+
+
+a{
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+a:hover{
+    color: white !important;
+}
+
+
+.f-image{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+.f-image1{
+    background-image: url(../Images/خلفيات-كمبيوتر-موقع-محيط-_182048401_-__.jpg);
+}
+.f-image2{
+    background-image: url(../Images/images.jpg);
+}
+.h-font h2{
+    font-size: 40px;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, .3);
+    border-radius: 7px;
+}
+
+#jumbotron{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    height: 14rem;
+}
+.row-style{
+    background-color: #343a4099;
+    border-radius: 7px;
+    padding: 20px;
+}
+.card-round{
+    
+    background-color: #555;
+    border-radius: 7px;
+}
+.icon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+
+}
+.card-link{
+    text-decoration: underline;
+}
+
+#image{
+    width: 18rem;
+    /* border: 1rem solid #343a4099; */
+    border-bottom: 1rem solid #212529;
+    border-left: 1rem solid #212529;
+    border-right: 1rem solid #212529;
+    border-radius: 7px;
+    
+}
+.b-image{
+    width: 18rem;
+    border-left: 1rem solid #212529;
+    border-right: 1rem solid #212529;
+    border-radius: 2px;
+
+}
+
+footer{
+    margin-top: 50px;
+    padding: 10px;
+    padding-bottom: 70px;
+    margin-bottom: -25px;
+}
+
+
+/* ////////////////////// */
+.btn-postion{
+    position: relative;
+    left: 30px;
+}
+.btn-postion::before{
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    display: none;
+    top: 20px;
+    left: 15px;
+    border-color: transparent transparent  rgb(173, 221, 236) transparent;
+}
+.btn-postion::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 40px;
+    display: none;
+    background-color: rgb(173, 221, 236);
+    top: 40px;
+    left: -18;
+    border-radius: 7px;
+}
+.btn-postion:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btn-postion:active::after{
+    content: "copied";
+    display: block;
+    height: 20px;
+}
+.btn-postion:active::after{
+    display: block;
+}
+.btn-postion:hover::before{
+    display: block;
+}
+
+.accordion-button{
+    position: relative;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    border: 0;
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../Images/down.svg");
+    transform: rotate(-180deg);
+}
+.accordion-button::after {
+    content: "";
+    margin-left: auto;
+    background-image: url("../Images/down.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 20px;
+}
+.accordion-button:hover{
+   background-color: #000;
+   color: #fff;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0c63e4;
+}
+
+.bg-code{
+    background-color: #212529 !important;
+}
+.m-br{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* ///////  madia quiry////////// */
+
+
+
+@media (max-width:1200px){
+    .container{
+        width: 1170px;
+    }
+  }
+  
+  @media (max-width:991px){
+    .container{
+        width: 970px;
+    }
+  }
+  @media (max-width:768px){
+    .container {
+        width: 750px;
+    }
+    .m-logo{
+        margin-left: 150px;
+    }
+  }
+  
+  @media (max-width:450px){
+    .container {
+        width: 420px;
+    }
+    .m-logo{
+        margin-left: 150px;
+    }
+  }
+
